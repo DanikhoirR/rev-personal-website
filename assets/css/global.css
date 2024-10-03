@@ -43,13 +43,26 @@
   color: var(--color-dark);
 }
 
+.text-center {
+  text-align: center;
+}
+
 .debug {
   border: 1px solid red;
 }
+
 /*    UTILITIES END     */
 
 body {
   font-family: "Poppins", system-ui, sans-serif;
+}
+
+.section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: var(--spacing-md);
+  min-height: 90vh;
 }
 
 /*    NAVIGATION START     */
@@ -76,7 +89,7 @@ nav ul li a {
   text-decoration: none;
   color: var(--color-dark);
   font-weight: 400;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
@@ -85,11 +98,6 @@ nav ul li a:hover {
 /*    NAVIGATION END     */
 
 #profile {
-  width: 90%;
-  margin: 0 auto;
-  display: flex; 
-  gap: var(--spacing-md);
-  min-height: 90vh;
 }
 
 #profile .profile-image {
@@ -109,4 +117,26 @@ nav ul li a:hover {
   align-items: start;
   gap: var(--spacing-md);
   padding: var(--spacing-md);
+}
+#about {
+  flex-direction: column;
+}
+#about .about-information {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: space-around;
+}
+
+#about .about-information .about-information--item {
+  width: 30%;
+}
+
+#about .about-information .about-information--item h3{
+  text-align: center;
+  color: var(--color-primary);
+}
+
+#about .about-details {
+  width: 50%;
+  margin: 0 auto;
 }
