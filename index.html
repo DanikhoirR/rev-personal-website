@@ -3,106 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!--    START NORMALIZE   -->
+    <title>My Porto</title>
+    <!--    START NORMALIZE     -->
     <link rel="stylesheet" href="./assets/css/vendor/normalize.css" />
-    <!--    END NORMALIZE   -->
+    <!--    END NORMALIZE     -->
 
-    <!--    START GLOBAL   -->
+    <!--    START GLOBAL     -->
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <!--    END GLOBAL   -->
+    <!--    END GLOBAL     -->
 
     <!--    START FONTS   -->
-    <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap"
       rel="stylesheet"
     />
     <!--    END FONTS   -->
   </head>
   <body>
+    <!--    START HEADER   -->
     <header class="">
       <div class="">
-        <h1 class="header-title">Logo</h1>
+        <h1 class="header-title">Dane.</h1>
       </div>
       <div class="">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <!--    END HEADER   -->
+
+    <!--    START MAIN   -->
     <main>
-      <!--    START PROFILE   -->
-      <section id="profile" class="section">
-        <div class="profile-image">
-          <img
-            src="https://avatar.iran.liara.run/public/21"
-            alt="avatar image"
-          />
-        </div>
-        <div class="profile-information">
-          <div class="">
-            <h1>Muhammad Zidane Khoir Rizky</h1>
-            <p>Fullstack-Developer</p>
+      <!--    START HOME   -->
+      <section class=" section" id="home">
+        <div class="hero">
+          <div class="hero-title">
+            <h1>
+              Hai I'm a <span class="span-primary">Full Stack</span> Developer &
+              <span class="span-transparent">UI/ UX</span> Designer
+            </h1>
+          </div>
+          <div class="hero-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-              adipisci enim ducimus maxime fugiat molestias et, numquam hic,
-              repellendus eveniet maiores facilis excepturi neque vel,
-              repudiandae quas tenetur pariatur dolorum? Recusandae dolores
-              dolor voluptatem minima ad dolore voluptatibus, similique
-              cupiditate sit perferendis est quo cum nemo voluptate natus
-              dolorum magnam.
+              Lorem ipsum dolor sit, amet consectetur adipisicing Lorem, ipsum.
+              <br />
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
             </p>
           </div>
-          <div class="">
-            <a href=""><i>O</i></a>
-            <a href=""><i>O</i></a>
-            <a href=""><i>O</i></a>
-            <a href=""><i>O</i></a>
+          <div class="button">
+            <button
+              class="btn btn-primary"
+              onclick="window.location.href='#blog'"
+            >
+              View Project
+            </button>
+            <button
+              class="btn btn-secondary"
+              onclick="window.location.href='#contact'"
+            >
+              Contact
+            </button>
           </div>
         </div>
+        <div class="debug">asd</div>
       </section>
-      <!--    END PROFILE   -->
+      <!--    END HOME   -->
 
-      <section id="about" class="section">
-        <div class="about-information">
-          <div class="about-information--item text-center">
-            <h3>education</h3>
-            <div class="">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, ipsa!
-              </p>
-            </div>
-          </div>
-          <div class="about-information--item text-center">
-            <h3>experience</h3>
-            <div class="">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Necessitatibus, ipsa!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="about-details">
-          <p class="text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
-            quibusdam similique laudantium laboriosam porro, recusandae ullam
-            quasi error dignissimos, vitae obcaecati temporibus! Quasi, tempora
-            deserunt ex similique quam porro deleniti omnis, ut impedit, aperiam
-            illum perspiciatis? Ad corporis ipsam incidunt cum, cumque
-            perferendis nobis debitis eaque numquam sequi similique est.
-          </p>
-        </div>
-      </section>
+      <!--    START ABOUT   -->
+      <section class="debug section" id="about">ASD</section>
+      <!--    END ABOUT   -->
+
+      <!--    START BLOG   -->
+      <section class="debug section" id="blog">ASD</section>
+      <!--    END BLOG   -->
+
+      <!--    START CONTACT   -->
+      <section class="debug section" id="contact">ASD</section>
+      <!--    END CONTACT   -->
     </main>
+    <!--    END MAIN   -->
+
+    <!--    START FOOTER   -->
+    <footer></footer>
+    <!--    END FOOTER   -->
   </body>
 </html>
