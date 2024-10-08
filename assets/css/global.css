@@ -114,7 +114,7 @@
 }
 
 .span-primary {
-  color: var(--color-secondary);
+  color: var(--color-hover-secondary);
 }
 
 .span-transparent {
@@ -334,7 +334,7 @@ header .navbar ul li a:hover {
 
 /*    START SECTION CONTACT    */
 #contact {
-  width: 40%;
+  width: 90%;
 }
 
 #contact .contact-form {
