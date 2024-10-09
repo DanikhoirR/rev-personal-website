@@ -57,13 +57,13 @@
   align-items: center;
   width: 90%;
   margin: 0 auto;
-  min-height: 90vh;;
+  min-height: 90vh;
+  margin-bottom: var(--spacing-lg);
 }
 
 .section-title {
   font-size: var(--font-xxl);
   margin-bottom: var(--spacing-md);
-  width: 30%;
   border-bottom: 1px solid rgba(225, 225, 225, 0.2);
 }
 
@@ -74,10 +74,13 @@
 }
 
 .btn {
-  padding: var(--spacing-sm) 1.75rem;
-  border-radius: 5px;
+  width: auto;
+  padding: var(--spacing-xs) 2px;
+  text-align: center;
+  border-radius: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: var(--spacing-sm);
   font-style: normal;
   color: var(--color-text);
   cursor: pointer;
@@ -106,7 +109,7 @@
 .btn-accent {
   background-color: var(--color-hover-secondary);
   border: 1px solid var(--color-hover-secondary);
-  transition: .3s;
+  transition: 0.3s;
 }
 .btn-accent:hover {
   background-color: var(--color-hover-primary);
@@ -185,7 +188,7 @@ header {
 }
 
 header .navbar .nav-list {
-  display: flex;
+  display: none;
   list-style: none;
   gap: var(--spacing-lg);
 }
@@ -226,7 +229,7 @@ header .navbar ul li a:hover {
 }
 
 #home .home-image img {
-  width: 350px;
+  width: 200px;
 }
 
 #home .hero {
@@ -243,7 +246,7 @@ header .navbar ul li a:hover {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-size: var(--font-lg);
+  font-size: var(--font-md);
 }
 
 #home .hero .hero-text {
@@ -270,10 +273,18 @@ header .navbar ul li a:hover {
   padding: var(--spacing-sm);
 }
 
+#about .about-information .about-description p {
+  font-size: var(--font-xs);
+}
+
 #about .about-information .about-card {
   display: flex;
   justify-content: space-around;
   gap: var(--spacing-md);
+}
+
+#about .about-information .about-card .card-title {
+  font-size: var(--spacing-md);
 }
 
 #about .about-information .about-card .card-item {
@@ -285,11 +296,10 @@ header .navbar ul li a:hover {
   gap: var(--spacing-xs);
   padding: var(--spacing-md);
   width: auto;
-  height: 25vh;
 }
 
 #about .about-information .about-card .card-item ul {
-  padding: var(--spacing-sm);
+  padding: 0 var(--spacing-xs);
 }
 
 #about .about-information .about-card .card-item ul li {
@@ -298,6 +308,7 @@ header .navbar ul li a:hover {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
+  font-size: var(--spacing-xs);
 }
 /*    END SECTION ABOUT    */
 
@@ -400,7 +411,23 @@ footer .footer-container {
   .button {
     justify-content: left;
   }
+  .btn {
+    padding: var(--spacing-sm) 1.75rem;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
   /*    UTILITIES    */
+
+  /*    START NAVBAR    */
+  header .navbar .nav-list {
+    display: flex;
+  }
+  /*    END NAVBAR    */
 
   /*    START HOME    */
   #home {
@@ -409,6 +436,10 @@ footer .footer-container {
 
   #home .home-image {
     justify-content: end;
+  }
+
+  #home .home-image img {
+    width: 350px;
   }
 
   #home .hero {
@@ -422,6 +453,9 @@ footer .footer-container {
   #home .hero .hero-title {
     font-size: 2.5rem;
     text-align: left;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   #home .hero .hero-text {
@@ -436,9 +470,15 @@ footer .footer-container {
   /*    END HOME    */
 
   /*    START ABOUT    */
+  #about .about-information .about-description p {
+    font-size: var(--font-md);
+  }
   #about .about-information .about-card .card-item {
     flex: content;
     height: 30vh;
+  }
+  #about .about-information .about-card .card-item ul {
+    padding: 0 var(--spacing-md);
   }
   #about .about-information .about-card .card-item ul li {
     font-size: var(--font-md);
@@ -447,6 +487,10 @@ footer .footer-container {
     font-weight: 600;
     font-style: normal;
     font-size: var(--font-md);
+  }
+
+  #about .about-information .about-card .card-title {
+    font-size: var(--spacing-lg);
   }
   /*    END ABOUT    */
 }
